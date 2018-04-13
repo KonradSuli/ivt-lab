@@ -1,6 +1,7 @@
-language: java
+language:
+ java
 jdk:
-	-oraclejdk8
-cahce:
-	directories:
-	-$HOME/.m2
+ -oraclejdk8
+cache:
+directories:
+ -$HOME/.m2
