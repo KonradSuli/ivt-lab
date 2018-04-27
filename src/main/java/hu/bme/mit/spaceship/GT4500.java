@@ -19,7 +19,9 @@ public class GT4500 implements SpaceShip {
     // TODO not implemented yet
     return false;
   }
-
+  /*
+  *Tries to fire primary first, if fails it then tries to fire the secondary
+  */
   private boolean tryToFirePrimaryFirst() {
     boolean firingSuccess = false;
 
@@ -39,9 +41,12 @@ public class GT4500 implements SpaceShip {
         }
   return firingSuccess;
   }
-
+  /*
+  *Tries to fire secondary first, if fails it then tries to fire the primary
+  */
   private boolean tryToFireSecondaryFirst() {
     boolean firingSuccess = false;
+    //Trying to fire secondary
     if (! secondaryTorpedoStore.isEmpty()) {
       firingSuccess = secondaryTorpedoStore.fire(1);
       wasPrimaryFiredLast = false;

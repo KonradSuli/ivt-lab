@@ -7,7 +7,7 @@ import java.util.Random;
 */
 public class TorpedoStore {
 
-  private double FAILURE_RATE = 0.0;
+  private final double FAILURE_RATE = 0.0;
 
   private int torpedoCount = 0;
   private Random generator = new Random();
